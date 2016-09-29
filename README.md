@@ -7,10 +7,13 @@ Probeer volgende vragen te beantwoorden:
 i.v.m. MSTest:
 
 - Welke Assert-methods worden naast `Assert.AreEqual` nog allemaal gebruikt?
+Assert.IsTrue, Assert.IsFalse
 - Waarom heeft `TestDirectories` een `Initialize`- en `CleanUp`-method?
+In de initialize method worden de gegevens getest en in de cleanup worden ze weer verwijderd.
 - Zijn de attributen `[TestMethod]`, `[TestClass]`, ... noodzakelijk? (Test uit!)
+Ja
 - Wat is de shortcut om alle tests uit te voeren in VS?
-
+CTRL R en CTRL A
 i.v.m. Files en Directories:
 
 - Wat is het voordeel van `Path.Combine` i.v.m. strings aan elkaar plakken?

@@ -7,27 +7,30 @@ Probeer volgende vragen te beantwoorden:
 i.v.m. MSTest:
 
 - Welke Assert-methods worden naast `Assert.AreEqual` nog allemaal gebruikt?
-Assert.IsTrue, Assert.IsFalse
+> Assert.IsTrue, Assert.IsFalse
 - Waarom heeft `TestDirectories` een `Initialize`- en `CleanUp`-method?
-In de initialize method worden de gegevens getest en in de cleanup worden ze weer verwijderd.
+> In de initialize method worden de gegevens getest en in de cleanup worden ze weer verwijderd.
 - Zijn de attributen `[TestMethod]`, `[TestClass]`, ... noodzakelijk? (Test uit!)
-Ja
+> Ja
 - Wat is de shortcut om alle tests uit te voeren in VS?
-CTRL R en CTRL A
+> CTRL R en CTRL A
 i.v.m. Files en Directories:
 
 - Wat is het voordeel van `Path.Combine` i.v.m. strings aan elkaar plakken?
-Het is overzichtelijker en makkelijker om het bestand te veranderen, ze geven je een correct path.
+> Het is overzichtelijker en makkelijker om het bestand te veranderen, ze geven je een correct path.
 - Wordt de return-waarde van `Directory.CreateDirectory(...)` steeds opgevangen? (TIP: gebruik `CTRL-SHIFT-F`)
-Nee, van de 3 lines worden er 2 gematched
+> Nee, de return-waarde wordt maar 1 van de 3 keer opgevangen.
 - Wat is de return-waarde van `Directory.CreateDirectory(...)`?
+> testDir
 - Wanneer is het nuttig om de return-waarde van `Directory.CreateDirectory(...)` op te vangen?
+> Als je test wilt uitvoeren met de directory (Delete, refresh)
 
 i.v.m. duidelijkheid/geschiedenis van de code:
 
 - Lukken de testen in de commit 3ffe2c86? Waarom (niet)?
-Er ontbreekt een bestand.
+> Er ontbreekt een bestand.
 - Wat lost commit d0320b6a op?
+
 - Wat is het probleem met de files in commit 9d184949?
 - Wat doet commit 9b3e4065? Maakt dit de code makkelijker leesbaar? Makkelijker uitbreidbaar?
 
